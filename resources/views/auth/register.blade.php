@@ -60,7 +60,7 @@
                         </div>
                     </div>
                     <div class="social-auth-links text-center mt-2 mb-3">
-                        <a href="#" class="btn btn-block btn-primary">
+                        <a href="{{route('signinFacebook')}}" class="btn btn-block btn-primary">
                             <i class="fab fa-facebook mr-2"></i> Facebook ile Kayıt Ol
                         </a>
                         <a href="#" class="btn btn-block btn-danger">

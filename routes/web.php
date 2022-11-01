@@ -8,6 +8,7 @@ use \App\Http\Controllers\backend\milk\indexController as milkIndexController;
 use \App\Http\Controllers\backend\sugar\indexController as sugarIndexController;
 use \App\Http\Controllers\backend\size\indexController as sizeIndexController;
 use \App\Http\Controllers\front\indexController as FrontIndexController;
+use App\Http\Controllers\Auth\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +25,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 Auth::routes();
+
+    Route::get('sign-in/github',[LoginController::class,'github'])->name('signinGithub');
+    Route::get('sign-in/github/redirect',[LoginController::class,'githubRedirect']);
+
+    Route::get('sign-in/facebook',[LoginController::class,'facebook'])->name('signinFacebook');
+    Route::get('sign-in/facebook/redirect',[LoginController::class,'facebookRedirect']);
+
+
 
 
 Route::middleware(['auth'])->group(function () {

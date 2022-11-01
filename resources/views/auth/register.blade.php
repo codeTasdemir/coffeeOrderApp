@@ -59,6 +59,20 @@
                             </div>
                         </div>
                     </div>
+                    <div class="social-auth-links text-center mt-2 mb-3">
+                        <a href="#" class="btn btn-block btn-primary">
+                            <i class="fab fa-facebook mr-2"></i> Facebook ile Kayıt Ol
+                        </a>
+                        <a href="#" class="btn btn-block btn-danger">
+                            <i class="fab fa-google-plus mr-2"></i> Google ile Kayıt Ol
+                        </a>
+                        <a href="#" class="btn btn-block btn-success">
+                            <i class="fab fa-twitter mr-2"></i> Twitter ile Kayıt Ol
+                        </a>
+                        <a href="{{route('signinGithub')}}" class="btn btn-block btn-secondary">
+                            <i class="fab fa-github mr-2"></i> Github ile Kayıt Ol
+                        </a>
+                    </div>
                     <div class="row">
 {{--                        <div class="col-8 ">--}}
 {{--                            <div class="icheck-primary">--}}
